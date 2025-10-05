@@ -10,7 +10,8 @@ import SkillsPage from './pages/SkillsPage';
 
 function App() {
   return (
-    <Router>
+    // This basename prop tells the router your app's home is /myjobhub
+    <Router basename="/myjobhub-">
       <div className="App">
         <Navbar />
         <main>

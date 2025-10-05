@@ -1,15 +1,16 @@
 // src/components/Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      {/* The brand can be a Link to the homepage */}
+      {/* Ensure this link points to "/" */}
       <Link to="/" className="navbar-brand">MyJobHub Patna</Link>
+      
       <ul className="navbar-links">
-        {/* Use Link instead of a */}
+        {/* Ensure this link ALSO points to "/" */}
         <li><Link to="/">Find Jobs</Link></li>
         <li><Link to="/benefits">Benefit Schemes</Link></li>
         <li><Link to="/skills">Learn Skills</Link></li>
